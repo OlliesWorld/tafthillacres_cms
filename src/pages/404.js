@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import SbEditable from 'storyblok-react'
  
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import DynamicComponent from "../components/DynamicComponent"
 import useStoryblok from "../lib/storyblok"
