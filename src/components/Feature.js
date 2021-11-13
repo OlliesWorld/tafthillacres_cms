@@ -3,7 +3,7 @@ import SbEditable from 'storyblok-react'
  
 const Feature = ({ blok }) => (
     <SbEditable content={blok} key={blok._uid}>
-    <div className="container w-3/5 bg-bg-light m-auto mb-8">
+    <div className="container md:w-3/4 lg:w-3/5 bg-bg-light m-auto mb-8">
       <div className="p-6  ">
         <h2 className="text-md text-dark-tan mb-0">
           { blok.subtitle }

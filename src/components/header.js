@@ -3,31 +3,24 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import ThemeToggle from '../components/themeToggle'
 import Nav from "./Nav"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
-const Header = ({ siteTitle, siteDescription }) => (
-  <header className=" bg-green border-b-8 border-dark-tan pt-4 max-h-44">
-  <h1 className="text-tan text-center m-0 h-1/2 ">
-        <Link
-          to="/"
-          className="text-main "
-        >
-          {siteTitle}
-        </Link>
-      
-        </h1>
-  <div className="flex justify-evenly">
-    <div className="-mt-12 -ml-8 pb-4">
-        <StaticImage src="../images/Logo-THA.png" alt="Taft Hill Acres"  width={200}
-                quality={95}
-                formats={["AUTO", "WEBP", "AVIF"]}
-                />
-    </div>  
+const Header = ({ siteTitle}) => (
+  <header className=" bg-green border-b-8 border-dark-tan md:pt-4 max-h-44">
+     <div className="text-dark-tan flex md:justify-end lg:mr-8 ">
+            <ThemeToggle  />
+        </div>
+  <div className="flex flex-col justify-center text-center md:-mt-12">
+
+    <h1 className="text-dark-tan m-0">
+        <Link to="/" className="lg:text-6xl">{siteTitle}</Link>
+    </h1>
+         <p className="m-0 text-sm md:text-md lg:text-lg">Fort Collins Horse Boarding Facility</p>
+  </div>
+  <div className="flex justify-center">
       
       <Nav />
-      <div className="text-tan  pt-2">
-          <ThemeToggle  />
-      </div>
+      
  </div>
   </header>
 )

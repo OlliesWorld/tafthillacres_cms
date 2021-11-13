@@ -15,7 +15,7 @@ const Article = ({blok}) => {
       
       
          
-          <div className="text-center w-3/4 m-auto"> {render(blok.text)}</div>
+          <div className="text-center w-11/12 md:w-3/4 m-auto"> {render(blok.text)}</div>
         
         
     
