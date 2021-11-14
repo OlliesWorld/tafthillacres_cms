@@ -7,7 +7,7 @@ export default function ThemeToggle() {
       {({ theme, toggleTheme }) => {
         if (theme == null) return null
         return(
-          <div  className="relative inline-block w-16 mr-2 align-middle select-none transition duration-200 ease-in horse">
+          <div  className="relative inline-block w-16 mr-2 align-middle select-none transition duration-200 ease-in ">
           <label
           htmlFor="toggle"
           className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"

@@ -16,7 +16,7 @@ const Page = ({ pageContext, location }) => {
  
   return (
   <Layout>
-    <Seo title={ story.content.title } />
+    <Seo title="Taft Hill Acres" />
     {/* <h1>{ story.content.title }</h1> */}
     { components }
     
