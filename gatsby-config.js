@@ -8,6 +8,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `@raae/gatsby-plugin-let-it-snow`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
