@@ -6,19 +6,20 @@ const Gallery = ({blok})  => {
  
   return (
     
-   <div className="grid grid-cols-4 justify-center container md:mx-16">
+   <div className="container m-auto">
+     <div className="flex  flex-wrap">
      
-        {blok.block.map((blok) => (
+          {blok.block.map((blok) => (
      
-          <img key={blok._uid} 
-            className="max-h-64" 
-            src={blok.img} id={blok._uid} alt={blok.title}
-             
-            // onClick={(e) => blok._uid.style.width='800'
-            />
-          
-        ))}
-      
+            <img key={blok._uid}
+              className="h-48 w-36 flex-grow object-contain"
+              src={blok.img} id={blok._uid} alt={blok.title}
+     
+              />
+     
+          ))}
+     
+     </div>
    </div>
     
   )

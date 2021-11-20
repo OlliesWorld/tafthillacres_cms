@@ -5,13 +5,13 @@ import fbicon from '../images/icons8-facebook-48.png';
 
 export default function Footer() {
   return (
-    <footer  className="flex flex-col-reverse justify-evenly mx-auto lg:flex-row lg:align-evenly pb-4 border-t-8 border-dark-tan">
-      <div className="pt-2">
+    <footer  className="flex flex-col-reverse text-center lg:flex-row   border-t-8 border-dark-tan">
+      <div className="m-auto pt-12">
         <p className="text-md justify-center ">Fort Collins Horse Boarding Facility</p>
         <p className="text-xs  pt-2 m-0">&copy; {new Date().getFullYear()}  Taft Hill Acres</p>
         <p className="mt-0 text-sm">Made with <span role="img" >💙</span> by<a href="https://roni.rocks/" target="/"> Roni</a></p>
       </div>
-      <div className=" lg:ml-24">
+      <div className="m-auto">
             <StaticImage src="../images/Logo-THA.png" alt="Taft Hill Acres"  width={300}
                 quality={95}
                 formats={["AUTO", "WEBP", "AVIF"]}
