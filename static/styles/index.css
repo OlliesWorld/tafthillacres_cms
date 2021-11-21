@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body.dark {
     --primary: #111827;
     --text-main: white;
@@ -11,3 +12,5 @@ body.dark {
     --primary: white;
     --text-main: #111827;
   }
+
+  

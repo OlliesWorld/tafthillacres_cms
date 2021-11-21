@@ -6,20 +6,20 @@ const Gallery = ({blok})  => {
  
   return (
     
-   <div className="container m-auto">
-     <div className="flex  flex-wrap">
-     
+   <div className="gallery p-4 ">
+    
+ 
           {blok.block.map((blok) => (
-     
+     <li className="gallery-img">
             <img key={blok._uid}
-              className="h-48 w-36 flex-grow object-contain"
+            className="w-full h-full object-cover"
               src={blok.img} id={blok._uid} alt={blok.title}
-     
+             
               />
-     
+     </li>
           ))}
      
-     </div>
+    
    </div>
     
   )

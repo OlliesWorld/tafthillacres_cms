@@ -3,6 +3,27 @@
 @tailwind utilities;
 @import "react-alice-carousel/lib/alice-carousel.css";
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: calc((100vw / 5) - ((5 - 1) * 5px));
+
+}
+
+.gallery li {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+.gallery-image {
+    margin-bottom: 5px;
+}
+.gallery-image:nth-child(2n) {
+  grid-row: span 2;
+}
+
 body.dark {
   --primary: #1b2911;
   --text-main: #d2d2c6d9;
