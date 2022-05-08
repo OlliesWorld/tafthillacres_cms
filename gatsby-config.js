@@ -6,12 +6,7 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
-    {
-      resolve: "@raae/gatsby-plugin-let-it-snow",
-      options: {
-        colors: ["#fff000", "red", "blue"],
-      },
-    },
+   
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     
@@ -45,11 +40,10 @@ module.exports = {
       options: {
         accessToken: 'CTQVjZ130srflhEc3Rr5KQtt',
         version: 'draft',
+        localAssets: true, 
         // languages: ['de', 'at'] // Optional parameter. Omission will retrieve all languages by default.
       }
     }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    
   ],
 }

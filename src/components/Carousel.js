@@ -11,7 +11,7 @@ const Carousel = ({blok})  => {
      <AliceCarousel autoPlay autoPlayInterval="3400"  autoHeight infinite>
         {blok.block.map((blok) => (
      
-          <img key={blok._uid} className="object-cover max-h-80 w-3/4 m-auto" src={blok.img} id={blok._uid} alt={blok.title} />
+          <img key={blok._uid} className="object-cover max-h-80 w-3/4 m-auto" src={blok.img} id={blok._uid} alt={blok.title} width={600} height={300} />
      
         ))}
       </AliceCarousel>
