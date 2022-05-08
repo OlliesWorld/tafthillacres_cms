@@ -10,13 +10,13 @@ const Gallery = ({blok})  => {
     
  
           {blok.block.map((blok) => (
-     <li className="gallery-img">
-            <img key={blok._uid}
-            className="w-full h-full object-cover"
-              src={blok.img} id={blok._uid} alt={blok.title}
-             
-              />
-     </li>
+            <li className="gallery-img" key={blok._uid}>
+              <img 
+                className="w-full h-full object-cover"
+                src={blok.img} id={blok._uid} alt={blok.title}
+              
+                />
+            </li>
           ))}
      
     

@@ -6,9 +6,15 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: "@raae/gatsby-plugin-let-it-snow",
+      options: {
+        colors: ["#fff000", "red", "blue"],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    `@raae/gatsby-plugin-let-it-snow`,
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -6,12 +6,12 @@ import SbEditable from 'storyblok-react'
 
 const Testimonial = ({blok})  => {
   return (
-    <SbEditable content={blok} key={blok._uid}>
-   <div className="motion-safe:animate-spin  w-10/12 md:w-full m-auto pb-20">
+    <SbEditable content={blok} key={blok._uid} >
+   <div className="  w-10/12 md:w-full m-auto pb-40">
      <AliceCarousel autoPlay autoPlayInterval="2400"  autoHeight infinite>
         {blok.block.map((blok) => (
      
-            <div key={blok._uid} className="mt-4 mr-4">
+            <div key={blok._uid} className="my-8 mr-4 h-72">
             <DynamicComponent blok={blok} />
             {/* <img className="object-cover w-full pt-3" src={blok.img} id={blok._uid} alt={blok.title} /> */}
           </div>

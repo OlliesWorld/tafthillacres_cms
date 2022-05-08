@@ -44,9 +44,9 @@ const NewContactForm = (props) => {
      {/* <label htmlFor="nameInput" className="text-4xl text-dark-tan mb-2 w-full font-bold">Send us a Message</label> */}
       <input type="hidden" name="form-name" value="contact-form" />
      
-        <input className='p-2 mb-2 w-64' name="Name" type="text" onChange={handleChange} required placeholder="Name"  />
-        <input className='p-2 mb-2 w-64' type='email' placeholder='Email' name='email' onChange={handleChange} required />
-        <textarea className='w-64 lg:w-80' placeholder='Message' name='message' rows='8' minLength="8" onChange={handleChange} required />
+        <input className='p-2 mb-2 w-64 text-black' name="Name" type="text" onChange={handleChange} required placeholder="Name"  />
+        <input className='p-2 mb-2 w-64 text-black' type='email' placeholder='Email' name='email' onChange={handleChange} required />
+        <textarea className='w-64 lg:w-80 text-black' placeholder='Message' name='message' rows='8' minLength="8" onChange={handleChange} required />
          
             
               <button className='bg-dark-tan p-2 mt-4' type='submit' >Contact Us</button>

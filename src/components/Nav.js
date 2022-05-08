@@ -55,7 +55,7 @@ return (
                    </li>
               ))}
               <li><Link to="/Contact" 
-              className="block w-full  w-1/2 uppercase px-4 py-1 md:p-2 rounded-lg lg:px-4 text-green text-2xl lg:text-tan hover:bg-dark-tan"
+              className="block w-full  uppercase px-4 py-1 md:p-2 rounded-lg lg:px-4 text-green text-2xl lg:text-tan hover:bg-dark-tan"
               >Contact</Link></li>
           </ul>
           </div>
