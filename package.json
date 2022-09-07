@@ -6,7 +6,7 @@
   "author": "Roni",
   "dependencies": {
     "gatsby": "^4.13.1",
-    "gatsby-plugin-dark-mode": "^1.1.2",
+    "": "^1.1.2",
     "gatsby-plugin-image": "^2.13.0",
     "gatsby-plugin-manifest": "^3.14.0",
     "gatsby-plugin-offline": "^4.14.0",
