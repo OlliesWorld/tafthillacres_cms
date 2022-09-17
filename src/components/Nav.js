@@ -26,25 +26,23 @@ const Nav = () => {
   //  console.log(Navigation)
 
 return (
-  <div className="w-half mt-4">
+  <div className="w-half">
    
     <nav className="m-0 ">
       <div className="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
         
         <button type="button" className="inline-block z-10 lg:hidden bg-dark-tan" onClick={handleClick}>
-    <svg className="h-10 w-10 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        {isOpen && (
-        <path fillRule="evenodd" clipRule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
-        )}
-        {!isOpen && (
-        <path fillRule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
-        )}
-    </svg>
-</button>
-        <div className="z-10 w-full text-center text-lg md:w-auto md:flex-grow flex md:items-center bg-dark-tan bg-opacity-90 lg:bg-transparent">
-          <ul className={`lg:flex ${  isOpen ? "block" : "hidden" } `}>
-          
-                
+            <svg className="h-10 w-10 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                {isOpen && (
+                <path fillRule="evenodd" clipRule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+                )}
+                {!isOpen && (
+                <path fillRule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                )}
+            </svg>
+          </button>
+      <div className="z-10 w-full text-center text-lg md:w-auto md:flex-grow flex md:items-center bg-dark-tan bg-opacity-90 lg:bg-transparent">
+          <ul className={`lg:flex ${  isOpen ? "block" : "hidden" } `}>    
            {Navigation &&
               Navigation.allStoryblokEntry.edges.map((edge) => (
                  

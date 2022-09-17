@@ -7,7 +7,7 @@ import SbEditable from 'storyblok-react'
 const Testimonial = ({blok})  => {
   return (
     <SbEditable content={blok} key={blok._uid} >
-   <div className="  w-10/12 md:w-full m-auto pb-40">
+   <div className=" w-10/12 md:w-full m-auto pb-40">
      <AliceCarousel autoPlay autoPlayInterval="2400"  autoHeight infinite>
         {blok.block.map((blok) => (
      

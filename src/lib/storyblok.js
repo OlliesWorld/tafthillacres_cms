@@ -17,8 +17,7 @@ export default function useStoryblok(originalStory, location) {
     if(story && typeof story.content === "string"){
       story.content = JSON.parse(story.content)
     }
-    
-    // see https://www.storyblok.com/docs/Guides/storyblok-latest-js
+ 
     function initEventListeners() {
       const { StoryblokBridge } = window
  
@@ -26,7 +25,7 @@ export default function useStoryblok(originalStory, location) {
         const storyblokInstance = new StoryblokBridge()
  
         storyblokInstance.on(['published', 'change'], (event) => {
-          // reloade project on save an publish
+
           window.location.reload(true)
         })  
     

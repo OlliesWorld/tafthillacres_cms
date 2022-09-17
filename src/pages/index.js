@@ -17,12 +17,12 @@ const IndexPage = ({data, location}) => {
  
 
   return (
-  <Layout >
+  <Layout>
     <SbEditable content={story.content}>
     <Seo title="Taft Hill Acres Horse Boarding Facility, close to CSU" />
     
     {components}
-      {/* <Link to="/using-typescript/" className="border-2 border-green text-text-dark p-2 ml-48">Visit Us Today!</Link> */}
+     
     </SbEditable>
   </Layout>
 )}
